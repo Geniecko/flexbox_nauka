@@ -1,0 +1,154 @@
+.channel-header_hero{
+	width: 100%;
+}
+
+.channel-header{
+	background-color:#fafafa;
+}
+
+.channel-header_nav{
+	position: relative;
+}
+
+.channel-header_details,
+.channel-header_nav
+{
+	padding: 0 100px;
+}
+
+.channel-header_avatar
+{
+	border-radius: 50%;
+	margin-right: 25px;
+	width: 80px;
+	height: 80px;
+}
+
+.channel-header_details{
+	display: flex;
+	align-items: center;
+	padding-top: 16px;
+}
+
+.channel-header_wrapper{
+	display: flex;
+	flex-direction: column;
+}
+
+.channel-header_name{
+	font-size: 24px;
+	font-weight: 700;
+	
+}
+
+.channel-header_subs-count{
+	color:#606060;
+	font-size: 14px;
+	
+}
+
+.channel-header_subscribed{
+	margin-left: auto;
+	margin-right: 10px;
+	font-size: 14px;
+	color: rgba(17,17,17,0.6);
+	background-color: #eeeeee;
+	padding: 10px 16px;
+	font-weight: 400;
+}
+
+.channel-header_bell{
+	font-size: 24px;
+	color:#909090;
+}
+
+
+
+.channel-header_tabs{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	padding-bottom: 16px;
+	overflow: hidden;
+}
+
+
+.channel-header_link{
+	color:#606060;
+	text-decoration: none;
+	padding: 0 32px;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 400;
+	display: inline-block;
+	height: 50px;
+	display: flex;
+	align-items: center;
+}
+
+.channel-header_link-active{
+	border-bottom: 3px solid rgba(10,10,10,1);
+}
+
+.channel-header_slide-button{
+	width: 48px;
+	height: 48px;
+	font-size: 14px;
+	color:#606060;
+	border-radius: 50%;
+	position: absolute;
+	background: #fafafa;
+	z-index: 1;
+	top:0;
+	transition: background 0.1s linear;
+}
+
+.channel-header_slide-button::active{
+	background: #ddd;
+}
+
+.channel-header_next{
+	right: 0;
+}
+
+.channel-header_prev{
+	left:52px;
+	display: none !important;
+}
+
+.channel-header_search{
+	display: flex;
+	align-items: center;
+	height: 50px;
+	color: #606060;
+	font-size: 14px;
+}
+
+@media(max-width: 700px){
+	.channel-header_avatar{
+		display: none;
+	}
+	
+	.channel-header_details{
+		padding: 16px 80px 0;
+	}
+	
+	.channel-header_name{
+		font-size: 18px;
+	}
+	
+	.channel-header_nav{
+		padding: 0 80px;
+	}
+	
+}
+
+@media(max-width: 550px)
+{
+	.channel-header_details{
+		padding: 16px 16px 0;
+	}
+}
+
+
